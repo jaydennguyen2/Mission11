@@ -47,7 +47,7 @@ function BookList() {
                         </ul>
                     </div>
                 </div>
-            ))}
+            ))} 
 
             <button disabled={pageNum === 1} onClick={() => setPageNum(pageNum - 1)}>Previous</button>
             {[...Array(totalPages)].map((_, i) => (
