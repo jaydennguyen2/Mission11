@@ -159,3 +159,4 @@ C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.pdb
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.genruntimeconfig.cache
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\ref\Mission11.dll
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.sourcelink.json
