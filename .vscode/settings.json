@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/9509c7f4-fc44-4d3a-91d8-2a6fab5069db/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Mission13-Nguyen-Backend",
+    "appService.deploySubpath": "backend\\Mission11\\Mission11\\publish"
+}
