@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Book } from "../types/Books";
 import { useCart } from "../context/CartContext";
+import { fetchBooks } from "../api/BooksAPI";
+import Pagination from "./Pagination";
 
 function BookList({ selectedCategories }: { selectedCategories: string[] }) {
   const [books, setBooks] = useState<Book[]>([]);
@@ -8,6 +10,8 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
   const [pageNum, setPageNum] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(0);
   const { addToCart } = useCart();
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   // Reset page number when selectedCategories change
   useEffect(() => {
@@ -15,22 +19,26 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
   }, [selectedCategories]);
 
   useEffect(() => {
-    const fetchBooks = async () => {
-      const categoryParams = selectedCategories
-        .map((cat) => `bookCategories=${encodeURIComponent(cat)}`)
-        .join("&");
+    const loadBooks = async () => {
+      
+      try {
+        setLoading(true);
+        const data = await fetchBooks(pageSize, pageNum, selectedCategories);
+      
 
-      const response = await fetch(
-        `https://localhost:5000/Book?pageSize=${pageSize}&pageNum=${pageNum}${
-          selectedCategories.length ? `&${categoryParams}` : ""
-        }`
-      );
-      const data = await response.json();
-      setBooks(data.books);
-      setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
+        setBooks(data.books);
+        setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
+      } catch (error) {
+        setError((error as Error).message);
+      } finally {
+        setLoading(false);
+      }
     };
-    fetchBooks();
+    loadBooks();
   }, [pageSize, pageNum, selectedCategories]);
+
+  if (loading) return <p>Loading Books...</p>;
+  if (error) return <p className='text-red-500'>Error: {error}</p>;
 
   return (
     <>
@@ -68,62 +76,21 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
             </div>
           </div>
         ))}
+
+              <Pagination
+                currentPage={pageNum}
+                totalPages={totalPages}
+                pageSize={pageSize}
+                onPageChange={setPageNum}
+                onPageSizeChange={(newSize) => {
+                  setPageSize(newSize);
+                  setPageNum(1);
+                }} 
+                />    
       </div>
 
-      {/* Pagination Controls */}
-      <div className="pagination-controls mb-3">
-        <button
-          className="btn btn-info"
-          disabled={pageNum === 1}
-          onClick={() => setPageNum(pageNum - 1)}
-          style={{ backgroundColor: '#28a745', borderColor: '#17a2b8', color: '#fff' }}
-        >
-          Previous
-        </button>
 
-        {[...Array(totalPages)].map((_, i) => (
-          <button
-            key={i + 1}
-            className={`btn ${pageNum === i + 1 ? "btn-primary" : "btn-light"}`}
-            style={{
-              marginLeft: '5px',
-              backgroundColor: pageNum === i + 1 ? '#80e0a7' : '#28a745',  // Dim the green color for the current page
-              color: '#fff',
-            }}
-            onClick={() => setPageNum(i + 1)}
-          >
-            {i + 1}
-          </button>
-        ))}
-
-        <button
-          className="btn btn-info"
-          disabled={pageNum === totalPages}
-          onClick={() => setPageNum(pageNum + 1)}
-          style={{ backgroundColor: '#28a745', borderColor: '#17a2b8', color: '#fff' }}
-        >
-          Next
-        </button>
-      </div>
-
-      {/* Page Size Selector */}
-      <div className="page-size-selector mb-3">
-        <label style={{ color: '#6c757d' }}>
-          Results per page:{" "}
-          <select
-            value={pageSize}
-            onChange={(e) => {
-              setPageSize(Number(e.target.value));
-              setPageNum(1);  // Reset to page 1 when page size changes
-            }}
-            style={{ backgroundColor: '#f8f9fa', borderColor: '#e3e3e3' }}
-          >
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-          </select>
-        </label>
-      </div>
+      
     </>
   );
 }
