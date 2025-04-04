@@ -16,7 +16,7 @@ builder.Services.AddDbContext<BookDbContext>(options =>
 builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp", 
     policy => {
-        policy.WithOrigins("http://localhost:3000", "https://lively-plant-0a3b0731e.6.azurestaticapps.net/")
+        policy.WithOrigins("http://localhost:3000", "https://blue-forest-09bde341e.6.azurestaticapps.net/")
         .AllowAnyMethod()
         .AllowAnyHeader();
     }));
