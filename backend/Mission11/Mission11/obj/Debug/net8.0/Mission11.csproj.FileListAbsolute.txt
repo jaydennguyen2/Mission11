@@ -161,3 +161,9 @@ C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\ref\Mission11.dll
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.sourcelink.json
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Bookstore.sqlite
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\web.config
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\Mission11.deps.json
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\Mission11.runtimeconfig.json
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\Mission11.staticwebassets.endpoints.json
