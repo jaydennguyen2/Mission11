@@ -13,10 +13,18 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BookDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("BookConnection")));
 
+// builder.Services.AddCors(options =>
+//     options.AddPolicy("AllowReactApp", 
+//     policy => {
+//         policy.WithOrigins("http://localhost:3000", "https://blue-forest-09bde341e.6.azurestaticapps.net")
+//         .AllowAnyMethod()
+//         .AllowAnyHeader();
+//     }));
+
 builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp", 
     policy => {
-        policy.WithOrigins("http://localhost:3000", "https://blue-forest-09bde341e.6.azurestaticapps.net")
+        policy.AllowAnyOrigin()
         .AllowAnyMethod()
         .AllowAnyHeader();
     }));
