@@ -29,6 +29,10 @@ C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\appsettings.json
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.staticwebassets.endpoints.json
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Bookstore.sqlite
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.deps.json
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.runtimeconfig.json
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.pdb
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Humanizer.dll
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Microsoft.Build.Locator.dll
@@ -140,6 +144,7 @@ C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.csproj.CoreCompileInputs.cache
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.sourcelink.json
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\scopedcss\bundle\Mission11.styles.css
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\staticwebassets.development.json
@@ -154,16 +159,5 @@ C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.dll
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\refint\Mission11.dll
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.pdb
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.deps.json
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.runtimeconfig.json
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Mission11.pdb
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.genruntimeconfig.cache
 C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\ref\Mission11.dll
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\obj\Debug\net8.0\Mission11.sourcelink.json
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\Bookstore.sqlite
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\web.config
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\appsettings.Development.json
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\appsettings.json
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\Mission11.deps.json
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\Mission11.runtimeconfig.json
-C:\Users\jayde\source\repos\Mission11\backend\Mission11\Mission11\bin\Debug\net8.0\publish\Mission11.staticwebassets.endpoints.json
