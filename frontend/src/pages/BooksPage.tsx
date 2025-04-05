@@ -7,7 +7,7 @@ function BooksPage() {
 
   useEffect(() => {
     const fetchCategories = async () => {
-      const res = await fetch("https://localhost:5000/Book/GetBookCategories");
+      const res = await fetch("https://mission13-nguyen-backend-epbdg7drapeehhbs.eastus-01.azurewebsites.net/book/getbookcategories");
       const data = await res.json();
       setCategories(data);
     };
